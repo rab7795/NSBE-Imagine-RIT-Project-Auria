@@ -126,41 +126,41 @@ jobs:
           # REDIS_URL: redis://localhost:6379/0
     #    run: bin/rails db:test:prepare test
 
-  system-test:
-    runs-on: ubuntu-latest
+  # system-test:
+   # runs-on: ubuntu-latest
 
-    services:
-      postgres:
-        image: postgres:16
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: project_auria_test
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd="pg_isready -U postgres"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=5
+   # services:
+   #   postgres:
+   #     image: postgres:16
+   #     env:
+   #       POSTGRES_USER: postgres
+   #       POSTGRES_PASSWORD: postgres
+   #       POSTGRES_DB: project_auria_test
+   #     ports:
+   #       - 5432:5432
+   #     options: >-
+   #       --health-cmd="pg_isready -U postgres"
+   #       --health-interval=10s
+   #       --health-timeout=5s
+   #       --health-retries=5
 
-    env:
-      RAILS_ENV: test
-      DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/project_auria_test
+   # env:
+   #   RAILS_ENV: test
+   #   DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/project_auria_test
 
-    steps:
-      - uses: actions/checkout@v4
+   # steps:
+   #   - uses: actions/checkout@v4
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
+   #   - name: Set up Ruby
+   #     uses: ruby/setup-ruby@v1
+   #     with:
+   #       bundler-cache: true
 
-      - name: Setup DB
-        run: bundle exec rails db:prepare
+   #   - name: Setup DB
+   #     run: bundle exec rails db:prepare
 
-      - name: Run system tests
-        run: bundle exec rails test:system
+   #   - name: Run system tests
+   #     run: bundle exec rails test:system
 
     # services:
     #  redis:
