@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com');
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f9fbf9;
+}
+
+/* Navigation */
+.navbar {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #2a2134;
+  color: white;
+}
+
+.links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Header */
+.hero {
+  background: linear-gradient(135deg, #2a2134, #fad264);
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 40px 10px;
+  //*border-radius: 0 0 20px 20px;*/
+}
+
+.hero h1 {
+  font-size: 5rem;
+}
+
+/* About */
+.about {
+  text-align: center;
+  font-size: 35px;
+  color: #9ca077;
+  font-family: "Lora", serif;
+  display: flex;
+  padding: 60px;
+  gap: 40px;
+  margin: 40px;
+  border-radius: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+.image {
+  flex: 1;
+  background: #f8e398;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+/* Features */
+.features-wrapper {
+  background: #9ca077;
+  margin: 30px;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.features {
+  display: flex;
+  height: 700px;
+  gap: 40px;
+}
+
+.list {
+  flex: 1;
+}
+
+/* Team */
+.team-wrapper {
+  background: #9ca077;
+  margin: 40px;
+  padding: 40px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px #141312;
+}
+
+.team-header {
+  margin-bottom: 30px;
+}
+
+.members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 150px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
