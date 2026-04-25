@@ -8,7 +8,8 @@ purple: #2a134
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: #f9fbf9;
+  background-image: url(https://i.pinimg.com/736x/9f/e5/fe/9fe5fed5bd89b31483056f9209e94a24.jpg);
+  background-size: cover;
 }
 
 /* Navigation */
@@ -20,7 +21,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
-  background: #2a2134;
+  background: #344c08;
   color: white;
 }
 
@@ -32,14 +33,15 @@ body {
 
 /* Header */
 .hero {
-  background-image: url(https://t3.ftcdn.net/jpg/03/69/33/78/360_F_369337883_LuRGPCIiOe5lqSyh9t2GPEIbZtPQLB7W.jpg);
+  background-image: url(https://i.pinimg.com/736x/27/b6/92/27b69298d70b9cdf71a0a833139d0d78.jpg);
   background-repeat: no-repeat;
   background-size:cover ;
-  
-  background-position: bottom ;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  background-position: center ;
   color: white;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   padding: 40px 10px;
   /*border-radius: 0 0 20px 20px;*/
 }
@@ -51,25 +53,35 @@ body {
 .hero h1 {
   font-size: 5rem;
 }
+/*think*/
 
 .think {
   margin: 40px;
-  color: #2a2134;
+    font-family: "Lato", sans-serif;
+    padding: 10px 200px;
+
+  color: #344c08;
   font-weight: 700;
-  font-style: oblique;
   text-align: center;
   font-size: 25px;
 
 }
 
+
 /* About */
 .about {
+ background-color: white; 
+ box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   text-align: center;
   font-size: 35px;
   color: #9ca077;
   font-family: "Lora", serif;
-  display: flex;
-  padding: 60px;
+ 
+  margin: 40px;
+  padding: 40px;
+   border-radius: 30px;
+    font-family: "Lato", sans-serif;
+
   gap: 40px;
   margin: 10px;
   border-radius: 20px;
@@ -77,11 +89,13 @@ body {
 
 .about p{
  font-size: 25px;
+   font-family: "Lato", sans-serif;
+
 }
 
 .about img{
-  width: 500px;
-  height:  500px;
+  width: 400px;
+  height:  400px;
 }
 
 .text {
@@ -100,6 +114,7 @@ body {
 /* Features */
 .features-wrapper {
   background: #9ca077;
+  font-family: "Lato", sans-serif;
   margin: 30px;
   padding: 40px;
   border-radius: 30px;
@@ -108,30 +123,44 @@ body {
 
 .features {
   display: flex;
- 
+ padding: 30px;
   height: 700px;
   gap: 40px;
 }
 .features h2 {
+  align-items: center;
+  color: #ffffff;
   font-size: 50px;
 }
 .features li{
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 30px;
   padding: auto;
 }
 
 .list {
   flex: 1;
 }
+/*Epilogue*/
+.ovw{
+    font-family: "Lato", sans-serif;
+    padding: 1px 200px;
+    font-size: 20px;
+    color: #344c08;
 
+}
+.ovw p{
+  font-weight: 1000;
+}
 /* Team */
-.team-wrapper {
-  background: linear-gradient(135deg, #fad264, #2a2134 );
+.team-wrapper {    font-family: "Lato", sans-serif;
+
+  background: linear-gradient(360deg, #ffffff, #9ca077 );
   margin: 40px;
   padding: 40px;
   border-radius: 30px;
   text-align: center;
-  box-shadow: 0 10px 25px #141312;
+  
 }
 
 .team-header {
@@ -143,14 +172,15 @@ body {
 .members {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 90px;
   
 }
 
 .card {
+  color: #344c08;
   background: white;
   padding: 20px;
   border-radius: 20px;
   width: 250px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
