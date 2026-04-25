@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com');
 
+/* colors
+yellows: #fad264  #f8e398
+greens: #9ca077 #344c08
+purple: #2a134
+*/
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -9,6 +14,9 @@ body {
 /* Navigation */
 .navbar {
   font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
@@ -24,16 +32,34 @@ body {
 
 /* Header */
 .hero {
-  background: linear-gradient(135deg, #2a2134, #fad264);
+  background-image: url(https://t3.ftcdn.net/jpg/03/69/33/78/360_F_369337883_LuRGPCIiOe5lqSyh9t2GPEIbZtPQLB7W.jpg);
+  background-repeat: no-repeat;
+  background-size:cover ;
+  
+  background-position: bottom ;
   color: white;
   text-align: center;
   font-size: 30px;
   padding: 40px 10px;
   //*border-radius: 0 0 20px 20px;*/
 }
-
+.hero img{
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
 .hero h1 {
   font-size: 5rem;
+}
+
+.think {
+  margin: 40px;
+  color: #2a2134;
+  font-weight: 700;
+  font-style: oblique;
+  text-align: center;
+  font-size: 25px;
+
 }
 
 /* About */
@@ -45,8 +71,17 @@ body {
   display: flex;
   padding: 60px;
   gap: 40px;
-  margin: 40px;
+  margin: 10px;
   border-radius: 20px;
+}
+
+.about p{
+ font-size: 25px;
+}
+
+.about img{
+  width: 500px;
+  height:  500px;
 }
 
 .text {
@@ -73,8 +108,16 @@ body {
 
 .features {
   display: flex;
+ 
   height: 700px;
   gap: 40px;
+}
+.features h2 {
+  font-size: 50px;
+}
+.features li{
+  font-size: 20px;
+  padding: auto;
 }
 
 .list {
@@ -83,7 +126,7 @@ body {
 
 /* Team */
 .team-wrapper {
-  background: #9ca077;
+  background: linear-gradient(135deg, #fad264, #2a2134 );
   margin: 40px;
   padding: 40px;
   border-radius: 30px;
@@ -93,18 +136,21 @@ body {
 
 .team-header {
   margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 30px;
 }
 
 .members {
   display: flex;
   justify-content: center;
   gap: 30px;
+  
 }
 
 .card {
   background: white;
   padding: 20px;
   border-radius: 20px;
-  width: 150px;
+  width: 250px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
